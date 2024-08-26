@@ -1,5 +1,8 @@
 package com.example.demo.model;
 
+import lombok.*;
+
+@Data
 public class Books {
     private int id;
     private String name;
@@ -15,33 +18,4 @@ public class Books {
         this.pages = pages;
     }
 
-    public int getId() {
-        return id;
-    }
-    public String getName() {
-        return name;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public int getYearPublishing() {
-        return yearPublishing;
-    }
-
-    public int getPages() {
-        return pages;
-    }
-
-    @Override
-    public String toString() {
-        return "Books{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", yearPublishing=" + yearPublishing +
-                ", pages=" + pages +
-                '}';
-    }
 }
